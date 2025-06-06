@@ -1,9 +1,9 @@
-Copyright © 2025 David Naab
+## Copyright © 2025 David Naab
 
-This software is provided free of charge for individual, educational use.
+This software is provided free of charge for individual, educational use only.
 
-Attribution is required in all derivative works or shared outputs.
+Attribution is required in all derivative works and distributed outputs.
 
-Organization-level, institutional, or district-wide use (including deployment, modification, or redistribution within a school system or company) is prohibited without prior written permission from the author.
+Organization-level, institutional, or district-wide use — including deployment, modification, or redistribution within a school system, company, or agency — is strictly prohibited without prior written permission from the author.
 
-Contact [your email] to request licensing or use approval.
+To request licensing or usage approval for school district or institutional use, contact the author directly.
