@@ -1,0 +1,217 @@
+
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>Credential Report</title>
+</head>
+<style>
+    body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #fff;
+        color: #000;
+        padding: 10px 20px;
+        line-height: 1.4;
+    }
+
+    .comment-toggle button {
+    font-size: 12px;
+    padding: 4px 8px;
+    margin-top: 6px;
+    cursor: pointer;
+    background-color: #eee;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    }
+
+    h1 {
+        color: #2c3e50;
+        font-size: 22px;
+        margin: 0 0 5px;
+    }
+
+    h2 {
+        font-size: 16px;
+        color: #555;
+        margin: 10px 0;
+    }
+
+    p, li {
+        font-size: 13px;
+        margin: 4px 0;
+    }
+
+    ul {
+        margin: 4px 0 12px 20px;
+        padding-left: 0;
+    }
+
+    hr {
+        border: none;
+        border-top: 1px solid #ccc;
+        margin: 20px 0 10px;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 5px;
+    }
+
+    th {
+        background-color: #2c3e50;
+        color: white;
+        padding: 6px;
+        font-size: 13px;
+        text-align: left;
+    }
+
+    td {
+        padding: 6px;
+        border-bottom: 1px solid #ddd;
+        font-size: 13px;
+    }
+
+    .flag {
+        color: #c0392b;
+        font-weight: bold;
+        font-size: 13px;
+        margin-bottom: 8px;
+    }
+
+    .section {
+        background-color: #fff;
+        padding: 10px 15px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    .comments-box {
+        width: 100%;
+        height: 60px;
+        padding: 6px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-family: inherit;
+        font-size: 13px;
+        resize: vertical;
+        background-color: #fff;
+    }
+
+    footer, footer p, footer ul, footer li {
+        font-size: 10px;
+        color: #666;
+        text-align: left;
+    }
+
+    footer {
+        padding-top: 10px;
+        margin-top: 30px;
+        border-top: 1px solid #ccc;
+    }
+
+    @media print {
+        body {
+            background: white;
+        }
+        .section {
+            box-shadow: none;
+            page-break-inside: avoid;
+        }
+    }
+</style>
+<body>
+<h1>Credential &amp; Certiport Report</h1>
+<h2>Selected Exams:</h2>
+<ul>
+<li>Web Authoring using Adobe Dreamweaver 2021 (v 21.x)</li>
+</ul>
+<p>This report compares Certiport exam results with NC CTE Admin credential records. It matches students by ID, lists all exam attempts, and evaluates credential status. Flags are shown for students who are marked as ‘Not Attempted’ but have results, as well as students who have no record of taking the selected exams.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+<p><strong>Report generated using:</strong></p>
+<ul>
+<li>Certiport Results File: Results (264) Plus-2.csv (last modified: 2025-06-05 12:04:47)</li>
+<li>Credentials File (NCCTE Admin): Credentials_ByStudentCredential_920546_F24_2025-06-05-1.csv (last modified: 2025-06-05 12:02:34)</li>
+</ul>
+</footer>
+<div class="section">
+<p><strong>Name:</strong> Student 1</p>
+<p><strong>Student ID:</strong> ID1000</p>
+<p><strong>Credential Status:</strong> Sample</p>
+<p><strong>Certiport Status:</strong> Sample</p>
+<p><strong>Exams:</strong></p>
+<table>
+<tr><th>Exam</th><th>Exam Date</th><th>Score</th><th>Result</th></tr>
+<tr><td>Web Authoring using Adobe Dreamweaver 2021 (v 21.x)</td><td>12/16/2024</td><td>734.0</td><td><span style="color:green;font-weight:bold">Pass</span></td></tr><tr><td>Digital Video using Adobe Premiere Pro 2024 (v 24.x)</td><td>04/24/2025</td><td>778.0</td><td><span style="color:green;font-weight:bold">Pass</span></td></tr>
+</table>
+<div class="comment-toggle">
+<button onclick="toggleCommentBox(this)" type="button">Add Comments</button>
+<div class="comments-box-container" style="display: none;">
+<textarea class="comments-box" placeholder="Enter comments here..."></textarea>
+</div>
+</div>
+</div><div class="section">
+<p><strong>Name:</strong> Student 2</p>
+<p><strong>Student ID:</strong> ID1001</p>
+<p><strong>Credential Status:</strong> Sample</p>
+<p><strong>Certiport Status:</strong> Sample</p>
+<p><strong>Exams:</strong></p>
+<table>
+<tr><th>Exam</th><th>Exam Date</th><th>Score</th><th>Result</th></tr>
+<tr><td>Web Authoring using Adobe Dreamweaver 2021 (v 21.x)</td><td>12/17/2024</td><td>511.0</td><td><span style="color:red;font-weight:bold">Fail</span></td></tr><tr><td>Web Authoring using Adobe Dreamweaver 2021 (v 21.x)</td><td>12/18/2024</td><td>813.0</td><td><span style="color:green;font-weight:bold">Pass</span></td></tr>
+</table>
+<div class="comment-toggle">
+<button onclick="toggleCommentBox(this)" type="button">Add Comments</button>
+<div class="comments-box-container" style="display: none;">
+<textarea class="comments-box" placeholder="Enter comments here..."></textarea>
+</div>
+</div>
+</div><div class="section">
+<p class="flag">⚠️ Student is marked as 'Not Attempted' and has no selected exam attempts</p>
+<p><strong>Name:</strong> Student 3</p>
+<p><strong>Student ID:</strong> ID1002</p>
+<p><strong>Credential Status:</strong> Sample</p>
+<p><strong>Certiport Status:</strong> </p>
+<p><strong>Exams:</strong></p>
+<table>
+<tr><th>Exam</th><th>Exam Date</th><th>Score</th><th>Result</th></tr>
+<tr><td>Digital Video using Adobe Premiere Pro 2022 (v 22.x)</td><td>05/01/2025</td><td>753.0</td><td><span style="color:green;font-weight:bold">Pass</span></td></tr>
+</table>
+<div class="comment-toggle">
+<button onclick="toggleCommentBox(this)" type="button">Add Comments</button>
+<div class="comments-box-container" style="display: none;">
+<textarea class="comments-box" placeholder="Enter comments here..."></textarea>
+</div>
+</div>
+</div></body>
+<script>
+    function toggleCommentBox(button) {
+        const container = button.nextElementSibling;
+        const isVisible = container.style.display === "block";
+        container.style.display = isVisible ? "none" : "block";
+        button.textContent = isVisible ? "Add Comments" : "Hide Comments";
+    }
+</script>
+</html>
