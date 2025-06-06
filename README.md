@@ -48,11 +48,8 @@ This Python script generates a structured HTML report comparing Certiport exam r
   - Students marked “Not Attempted” but with Certiport results.
   - Students who show no attempt data for selected exams.
 
-## Future Improvements
-
-- Add option to export to PDF.
-- Support filtering by course number or teacher.
-- Prioritize flagged students at the top of the report.
+## Screenshots
+[Example Report](example-report.png)
 
 # License
 Copyright © 2025 David Naab
