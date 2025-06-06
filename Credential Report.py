@@ -1,4 +1,9 @@
-# SEE PATCH THAT HASN"T BEEN APPLIED YET: https://chatgpt.com/c/6841c4dd-0d44-800e-ae96-bab22a03d3f5
+# Copyright © 2025 David Naab
+# This software is provided free of charge for individual, educational use only.
+# Attribution is required in all derivative works and distributed outputs.
+# Organization-level, institutional, or district-wide use — including deployment, modification, or redistribution within a school system, company, or agency — is strictly prohibited without prior written permission from the author.
+# To request licensing or usage approval for school district or institutional use, contact the author directly.
+# URL: https://github.com/TheMrNaab/NCCTE-Audit-Tool
 
 import pandas as pd
 import tkinter as tk
@@ -7,11 +12,26 @@ from tabulate import tabulate
 import os
 from datetime import datetime
 
+# --- License Agreement Prompt ---
+print("Copyright © 2025 David Naab\n")
+print("This software is provided free of charge for individual, educational use only.\n")
+print("Attribution is required in all derivative works and distributed outputs.\n")
+print("Organization-level, institutional, or district-wide use — including deployment,")
+print("modification, or redistribution within a school system, company, or agency —")
+print("is strictly prohibited without prior written permission from the author.\n")
+print("To request licensing or usage approval for school district or institutional use,")
+print("contact the author directly.\n\n")
+
+agreement = input("Do you agree to these terms? (yes/no): ").strip().lower()
+if agreement != "yes":
+    print("\n\nYou must accept the license agreement to use this software. Exiting.")
+    exit(1)
+
+print("\n\n\n\n")
+
 # --- Formatting helpers ---
 def bold(text):
     return f"\033[1m{text}\033[0m"
-
-
 
 def file_info(path):
     name = os.path.basename(path)
